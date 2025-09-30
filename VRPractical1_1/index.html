@@ -3,22 +3,17 @@
     <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
   </head>
   <body>
-    <a-scene shadow="type: pcfsoft">
-      <!-- Light for shadows -->
-      <a-entity light="type: directional; intensity: 0.9; castShadow: true" 
-                position="5 10 7" rotation="-45 30 0"></a-entity>
-      <a-entity light="type: ambient; intensity: 0.4"></a-entity>
-
+    <a-scene>
       <!-- Car inside wireframe -->
       <a-box wireframe="true" position="0 1 0" width="4" height="3" depth="4" color="blue">
 
         <!-- Car body -->
         <a-box position="0 0.6 0" width="2" height="0.6" depth="2.5" 
-               color="blue" shadow="cast: true"></a-box>
+               color="blue"></a-box>
 
         <!-- Car top -->
         <a-box position="0 1.3 0" width="1.3" height="0.9" depth="1.5" 
-               color="darkblue"  shadow="cast: true"></a-box>
+               color="darkblue"></a-box>
 
         <!-- Wheels -->
         <a-cylinder position="-1.1 0.2 0.9" radius="0.3" height="0.2"
@@ -31,93 +26,93 @@
             rotation="0 0 0" color="black" wireframe="true"></a-cylinder>
 
         <!-- Headlights -->
-        <a-sphere position="-0.5 0.7 1.3" radius="0.15" src="Screenshot 2025-09-28 164722.png" shadow="cast: true" ></a-sphere>
-        <a-sphere position="0.5 0.7 1.3" radius="0.15" src="Screenshot 2025-09-28 164722.png" shadow="cast: true" ></a-sphere>
+        <a-sphere position="-0.5 0.7 1.3" radius="0.15" src="Screenshot 2025-09-28 164722.png" ></a-sphere>
+        <a-sphere position="0.5 0.7 1.3" radius="0.15" src="Screenshot 2025-09-28 164722.png" ></a-sphere>
 
         <!-- Taillights -->
-        <a-sphere position="-0.5 0.7 -1.25" radius="0.15" src="taillight.jpg" shadow="cast: true" opacity="0.8"></a-sphere>
-        <a-sphere position="0.5 0.7 -1.25" radius="0.15" src="taillight.jpg" shadow="cast: true" opacity="0.8"></a-sphere>
+        <a-sphere position="-0.5 0.7 -1.25" radius="0.15" src="taillight.jpg" opacity="0.8"></a-sphere>
+        <a-sphere position="0.5 0.7 -1.25" radius="0.15" src="taillight.jpg"  opacity="0.8"></a-sphere>
 
         <!-- Windows -->
         <a-box position="0 1.4 0.8" width="1.2" height="0.5" depth="0.05"
-               rotation="-10 0 0" src="window.jpg" shadow="cast: true" opacity="0.5"></a-box>
+               rotation="-10 0 0" src="window.jpg" opacity="0.5"></a-box>
         <a-box position="0 1.4 -0.8" width="1.2" height="0.5" depth="0.05"
-               rotation="10 0 0" src="window.jpg" shadow="cast: true" opacity="0.5"></a-box>
+               rotation="10 0 0" src="window.jpg"  opacity="0.5"></a-box>
 
         <!-- Left side windows -->
         <a-box position="-0.65 1.4 0.4" width="0.05" height="0.5" depth="0.6"
-               src="window.jpg" shadow="cast: true" opacity="0.5"></a-box>
+               src="window.jpg"  opacity="0.5"></a-box>
         <a-box position="-0.65 1.4 -0.4" width="0.05" height="0.5" depth="0.6"
-               src="window.jpg" shadow="cast: true" opacity="0.5"></a-box>
+               src="window.jpg"  opacity="0.5"></a-box>
 
         <!-- Right side windows -->
         <a-box position="0.65 1.4 0.4" width="0.05" height="0.5" depth="0.6"
-               src="window.jpg" shadow="cast: true" opacity="0.5"></a-box>
+               src="window.jpg"  opacity="0.5"></a-box>
         <a-box position="0.65 1.4 -0.4" width="0.05" height="0.5" depth="0.6"
-               src="window.jpg" shadow="cast: true" opacity="0.5"></a-box>
+               src="window.jpg"  opacity="0.5"></a-box>
 
         <!-- Spoiler -->
         <a-box position="0 1.3 -1.2" width="1.6" height="0.05" depth="0.3" 
-               color="blue" shadow="cast: true"></a-box>
+               color="blue"  true"></a-box>
         <a-box position="-0.6 1.0 -1.2" width="0.1" height="0.5" depth="0.1" 
-               color="blue" shadow="cast: true"></a-box>
+               color="blue" true"></a-box>
         <a-box position="0.6 1.0 -1.2" width="0.1" height="0.5" depth="0.1" 
-               color="blue" shadow="cast: true"></a-box>
+               color="blue" ></a-box>
       </a-box>
       <!-- Car 2 purple car-->
       <a-box wireframe="true" position="8 3 -5" width="4" height="3" depth="4" color="blue" rotation="200 185 230">
 
         <!-- Car body -->
         <a-box position="0 0.6 0" width="2" height="0.6" depth="2.5" 
-               color="#a660a7" shadow="cast: true" shadow="cast: true"></a-box>
+               color="#a660a7"  ></a-box>
 
         <!-- Car top -->
         <a-box position="0 1.3 0" width="1.3" height="0.9" depth="1.5" 
-               color="#d7d2eb"  shadow="cast: true"></a-box>
+               color="#d7d2eb" ></a-box>
 
         <!-- Wheels -->
         <a-cylinder position="-1.1 0.2 0.9" radius="0.3" height="0.2"
-            rotation="0 0 0" color="black" wireframe="true" shadow="cast: true"></a-cylinder>
+            rotation="0 0 0" color="black" wireframe="true" ></a-cylinder>
        <a-cylinder position="1.1 0.2 0.9" radius="0.3" height="0.2"
-            rotation="0 0 0" color="black" wireframe="true" shadow="cast: true"></a-cylinder>
+            rotation="0 0 0" color="black" wireframe="true" ></a-cylinder>
        <a-cylinder position="-1.1 0.2 -0.9" radius="0.3" height="0.2"
-            rotation="0 0 0" color="black" wireframe="true" shadow="cast: true"></a-cylinder>
+            rotation="0 0 0" color="black" wireframe="true" ></a-cylinder>
        <a-cylinder position="1.1 0.2 -0.9" radius="0.3" height="0.2"
-            rotation="0 0 0" color="black" wireframe="true" shadow="cast: true"></a-cylinder>
+            rotation="0 0 0" color="black" wireframe="true" ></a-cylinder>
 
         <!-- Headlights -->
-        <a-sphere position="-0.5 0.7 1.3" radius="0.15" src="Screenshot 2025-09-28 164722.png" shadow="cast: true"></a-sphere>
-        <a-sphere position="0.5 0.7 1.3" radius="0.15" src="Screenshot 2025-09-28 164722.png" shadow="cast: true"></a-sphere>
+        <a-sphere position="-0.5 0.7 1.3" radius="0.15" src="Screenshot 2025-09-28 164722.png" ></a-sphere>
+        <a-sphere position="0.5 0.7 1.3" radius="0.15" src="Screenshot 2025-09-28 164722.png" ></a-sphere>
 
         <!-- Taillights -->
-        <a-sphere position="-0.5 0.7 -1.25" radius="0.15" src="taillight.jpg" shadow="cast: true" opacity="0.5"></a-sphere>
-        <a-sphere position="0.5 0.7 -1.25" radius="0.15" src="taillight.jpg" shadow="cast: true" opacity="0.5"></a-sphere>
+        <a-sphere position="-0.5 0.7 -1.25" radius="0.15" src="taillight.jpg" opacity="0.5"></a-sphere>
+        <a-sphere position="0.5 0.7 -1.25" radius="0.15" src="taillight.jpg"  opacity="0.5"></a-sphere>
 
         <!-- Windows -->
         <a-box position="0 1.4 0.8" width="1.2" height="0.5" depth="0.05"
-               rotation="-10 0 0" src="window.jpg" shadow="cast: true" opacity="0.5"></a-box>
+               rotation="-10 0 0" src="window.jpg" opacity="0.5"></a-box>
         <a-box position="0 1.4 -0.8" width="1.2" height="0.5" depth="0.05"
-               rotation="10 0 0" src="window.jpg" shadow="cast: true" opacity="0.5"></a-box>
+               rotation="10 0 0" src="window.jpg" opacity="0.5"></a-box>
 
         <!-- Left side windows -->
         <a-box position="-0.65 1.4 0.4" width="0.05" height="0.5" depth="0.6"
-               src="window.jpg" shadow="cast: true" opacity="0.5"></a-box>
+               src="window.jpg" opacity="0.5"></a-box>
         <a-box position="-0.65 1.4 -0.4" width="0.05" height="0.5" depth="0.6"
-               src="window.jpg" shadow="cast: true" opacity="0.5"></a-box>
+               src="window.jpg" opacity="0.5"></a-box>
 
         <!-- Right side windows -->
         <a-box position="0.65 1.4 0.4" width="0.05" height="0.5" depth="0.6"
-               src="window.jpg" shadow="cast: true" opacity="0.5"></a-box>
+               src="window.jpg"  opacity="0.5"></a-box>
         <a-box position="0.65 1.4 -0.4" width="0.05" height="0.5" depth="0.6"
-               src="window.jpg" shadow="cast: true" opacity="0.5"></a-box>
+               src="window.jpg"  opacity="0.5"></a-box>
 
         <!-- Spoiler -->
         <a-box position="0 1.3 -1.2" width="1.6" height="0.05" depth="0.3" 
-               color="#a660a7" shadow="cast: true"></a-box>
+               color="#a660a7" ></a-box>
         <a-box position="-0.6 1.0 -1.2" width="0.1" height="0.5" depth="0.1" 
-               color="#a660a7" shadow="cast: true"></a-box>
+               color="#a660a7" ></a-box>
         <a-box position="0.6 1.0 -1.2" width="0.1" height="0.5" depth="0.1" 
-               color="#a660a7" shadow="cast: true"></a-box>
+               color="#a660a7" ></a-box>
       </a-box>
 
       <!-- Car 3 green car -->
@@ -125,11 +120,11 @@
 
         <!-- Car body -->
         <a-box position="0 0.6 0" width="2" height="0.6" depth="2.5" 
-               color="#3d6e64" shadow="cast: true"></a-box>
+               color="#3d6e64" ></a-box>
 
         <!-- Car top -->
         <a-box position="0 1.3 0" width="1.3" height="0.9" depth="1.5" 
-               color="#79cfb8"  shadow="cast: true"></a-box>
+               color="#79cfb8" ></a-box>
 
         <!-- Wheels -->
         <a-cylinder position="-1.1 0.2 0.9" radius="0.3" height="0.2"
@@ -142,68 +137,68 @@
             rotation="0 0 0" color="black" wireframe="true"></a-cylinder>
 
         <!-- Headlights -->
-        <a-sphere position="-0.5 0.7 1.3" radius="0.15" src="Screenshot 2025-09-28 164722.png" shadow="cast: true"></a-sphere>
-        <a-sphere position="0.5 0.7 1.3" radius="0.15" src="Screenshot 2025-09-28 164722.png" shadow="cast: true"></a-sphere>
+        <a-sphere position="-0.5 0.7 1.3" radius="0.15" src="Screenshot 2025-09-28 164722.png" ></a-sphere>
+        <a-sphere position="0.5 0.7 1.3" radius="0.15" src="Screenshot 2025-09-28 164722.png" ></a-sphere>
 
         <!-- Taillights -->
-        <a-sphere position="-0.5 0.7 -1.25" radius="0.15" src="taillight.jpg" shadow="cast: true" opacity="0.5"></a-sphere>
-        <a-sphere position="0.5 0.7 -1.25" radius="0.15" src="taillight.jpg" shadow="cast: true" opacity="0.5"></a-sphere>
+        <a-sphere position="-0.5 0.7 -1.25" radius="0.15" src="taillight.jpg" opacity="0.5"></a-sphere>
+        <a-sphere position="0.5 0.7 -1.25" radius="0.15" src="taillight.jpg" opacity="0.5"></a-sphere>
 
         <!-- Windows -->
         <a-box position="0 1.4 0.8" width="1.2" height="0.5" depth="0.05"
-               rotation="-10 0 0" src="window.jpg" shadow="cast: true" opacity="0.5"></a-box>
+               rotation="-10 0 0" src="window.jpg" opacity="0.5"></a-box>
         <a-box position="0 1.4 -0.8" width="1.2" height="0.5" depth="0.05"
-               rotation="10 0 0" src="window.jpg" shadow="cast: true" opacity="0.5"></a-box>
+               rotation="10 0 0" src="window.jpg"  opacity="0.5"></a-box>
 
         <!-- Left side windows -->
         <a-box position="-0.65 1.4 0.4" width="0.05" height="0.5" depth="0.6"
-               src="window.jpg" shadow="cast: true" opacity="0.5"></a-box>
+               src="window.jpg" opacity="0.5"></a-box>
         <a-box position="-0.65 1.4 -0.4" width="0.05" height="0.5" depth="0.6"
-               src="window.jpg" shadow="cast: true" opacity="0.5"></a-box>
+               src="window.jpg"  opacity="0.5"></a-box>
 
         <!-- Right side windows -->
         <a-box position="0.65 1.4 0.4" width="0.05" height="0.5" depth="0.6"
-               src="window.jpg" shadow="cast: true" opacity="0.5"></a-box>
+               src="window.jpg"  opacity="0.5"></a-box>
         <a-box position="0.65 1.4 -0.4" width="0.05" height="0.5" depth="0.6"
-               src="window.jpg" shadow="cast: true" opacity="0.5"></a-box>
+               src="window.jpg" opacity="0.5"></a-box>
 
         <!-- Spoiler  -->
         <a-box position="0 1.3 -1.2" width="1.6" height="0.05" depth="0.3" 
-               color="#3d6e64" shadow="cast: true"></a-box>
+               color="#3d6e64" ></a-box>
         <a-box position="-0.6 1.0 -1.2" width="0.1" height="0.5" depth="0.1" 
-               color="#3d6e64" shadow="cast: true"></a-box>
+               color="#3d6e64" ></a-box>
         <a-box position="0.6 1.0 -1.2" width="0.1" height="0.5" depth="0.1" 
-               color="#3d6e64" shadow="cast: true"></a-box>
+               color="#3d6e64" ></a-box>
       </a-box>
 
       <!-- Ground plane -->
       <a-plane position="0 0 0" rotation="-90 0 0" width="40" height="40"
-               src="gravel.jpg" repeat="5 5" shadow="receive: true"></a-plane>
+               src="gravel.jpg" repeat="5 5" ></a-plane>
 
       <!-- Sky -->
       <a-sky src="sku.jpg"></a-sky>
       <a-entity>
         <!-- Front edge -->
-        <a-cylinder position="-10 1 18" radius="0.3" height="2" color="sienna" shadow="cast: true"></a-cylinder>
-        <a-cone position="-10 2.5 18" radius-bottom="1" radius-top="0" height="2" src="trees.jpg" shadow="cast: true"></a-cone>
+        <a-cylinder position="-10 1 18" radius="0.3" height="2" color="sienna" ></a-cylinder>
+        <a-cone position="-10 2.5 18" radius-bottom="1" radius-top="0" height="2" src="trees.jpg" ></a-cone>
 
-        <a-cylinder position="10 1 18" radius="0.25" height="2" color="sienna" shadow="cast: true"></a-cylinder>
-        <a-sphere position="10 2.2 18" radius="1" src="trees.jpg" shadow="cast: true"></a-sphere>
+        <a-cylinder position="10 1 18" radius="0.25" height="2" color="sienna" ></a-cylinder>
+        <a-sphere position="10 2.2 18" radius="1" src="trees.jpg" ></a-sphere>
 
         <!-- Back edge -->
-        <a-cylinder position="-12 1 -18" radius="0.35" height="2.5" color="sienna" shadow="cast: true"></a-cylinder>
-        <a-cone position="-12 3 -18" radius-bottom="1.3" radius-top="0" height="2.5" src="trees.jpg" shadow="cast: true"></a-cone>
+        <a-cylinder position="-12 1 -18" radius="0.35" height="2.5" color="sienna" ></a-cylinder>
+        <a-cone position="-12 3 -18" radius-bottom="1.3" radius-top="0" height="2.5" src="trees.jpg" ></a-cone>
 
-        <a-cylinder position="12 1 -18" radius="0.3" height="2" color="sienna" shadow="cast: true"></a-cylinder>
-        <a-cone position="12 2.5 -18" radius-bottom="1" radius-top="0" height="2" src="trees.jpg" shadow="cast: true"></a-cone>
+        <a-cylinder position="12 1 -18" radius="0.3" height="2" color="sienna" ></a-cylinder>
+        <a-cone position="12 2.5 -18" radius-bottom="1" radius-top="0" height="2" src="trees.jpg" ></a-cone>
 
         <!-- Left edge -->
-        <a-cylinder position="-18 1 5" radius="0.25" height="2" color="sienna" shadow="cast: true"></a-cylinder>
-        <a-sphere position="-18 2.2 5" radius="1" src="trees.jpg" shadow="cast: true"></a-sphere>
+        <a-cylinder position="-18 1 5" radius="0.25" height="2" color="sienna"></a-cylinder>
+        <a-sphere position="-18 2.2 5" radius="1" src="trees.jpg" ></a-sphere>
 
         <!-- Right edge -->
-        <a-cylinder position="18 1 -5" radius="0.3" height="2" color="sienna" shadow="cast: true"></a-cylinder>
-        <a-cone position="18 2.5 -5" radius-bottom="1.1" radius-top="0" height="2.2" src="trees.jpg" shadow="cast: true"></a-cone>
+        <a-cylinder position="18 1 -5" radius="0.3" height="2" color="sienna" ></a-cylinder>
+        <a-cone position="18 2.5 -5" radius-bottom="1.1" radius-top="0" height="2.2" src="trees.jpg" ></a-cone>
       </a-entity>
 
 
