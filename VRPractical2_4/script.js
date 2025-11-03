@@ -32,4 +32,5 @@ function loop() {
     ufo.invade();
   }
   window.requestAnimationFrame(loop);
+  //
 }
