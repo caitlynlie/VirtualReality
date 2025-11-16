@@ -39,7 +39,7 @@ let maze = [
   "x-----x-x-----x-x-----x---x",
   "xxx-xxx-x-xxx-xxx-xxx-xxx-x",
   "x--------x-----x--------x-x",
-  "xxxxxxxxxxxxxxxxxxxxxx---x-x"  // exit at bottom-right
+  "xxxxxxxxxxxxxxxxxxxxxx---x-x"  
 ];
 
 
